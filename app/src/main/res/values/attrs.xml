@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="OBReceiptView">
+        <attr name="triangleCount" format="integer"/>
+        <attr name="backgroundColor" format="reference"/>
+    </declare-styleable>
+
+</resources>

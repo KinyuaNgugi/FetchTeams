@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ForzaTeams</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="Team">Team</string>
+    <string name="is_national">Is National</string>
+    <string name="country">Country</string>
+    <string name="teams">Teams</string>
+</resources>

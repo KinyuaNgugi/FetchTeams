@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:layout_marginTop="12dp">
+        <LinearLayout
+            android:id="@+id/headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ke.co.kinyua.forzateams.views.FZTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Team"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                foo:customFont="fonts/avenir/Avenir-Black.ttf" />
+
+            <ke.co.kinyua.forzateams.views.FZTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/is_national"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                foo:customFont="fonts/avenir/Avenir-Black.ttf"  />
+
+            <ke.co.kinyua.forzateams.views.FZTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/country"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                foo:customFont="fonts/avenir/Avenir-Black.ttf"  />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/expense_recycler"
+            android:layout_below="@id/headers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</LinearLayout>
